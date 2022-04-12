@@ -38,8 +38,16 @@ const UseEffectNotes = () => {
             Clean up function in useEffect() ?
           </Typography>
           <Typography style={{ marginLeft: "5px" }}>
-            The <b>Clean Up</b> function is the function which runs after the
-            useEffect has done its job
+            The <b>Clean Up</b>
+          </Typography>
+          <Typography>
+            <i style={{ marginLeft: "5px", color: "grey" }}>
+              React performs the cleanup when the component unmounts. However,
+              as we learned earlier, effects run for every render and not just
+              once. <br />
+              This is why React also cleans up effects from the previous render
+              before running the effects next time.
+            </i>
           </Typography>
           <Typography>
             A good example of needing a clean up can be unmounting the event
@@ -63,6 +71,17 @@ const Notes = () => {
         Overview
       </Typography>
       <ul>
+        <li>
+          <i>
+            <a
+              href={"https://reactjs.org/docs/hooks-effect.html"}
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              Source :- https://reactjs.org/docs/hooks-effect.html
+            </a>
+          </i>
+        </li>
         <li>
           The <i>Effect Hook</i> lets you perform <b> side effects </b> in
           function components
